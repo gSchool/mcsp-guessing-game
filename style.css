@@ -1,0 +1,13 @@
+.info {
+    width: 650px;
+    border-radius: 30px;
+    border: 10px solid seagreen;
+    background-color: saddlebrown;
+    padding: 5px;
+    font-weight: bolder;
+    color: whitesmoke
+}
+
+strong {
+    color: palegreen;
+}
