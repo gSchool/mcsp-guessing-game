@@ -2,6 +2,9 @@
  - Basic Data Types
  - Conditionals
  - Loops
+ - Arrays
+ - Objects
+ - Chrome `debugger` keyword
  - VS Code
  - Terminal
  - Files / Folder Navigation
