@@ -64,7 +64,7 @@ Using alert and prompt, write a program that asks the user to guess a number and
 
 **Inputs:**
 
-(Integer) Guess
+(Number) Guess
 
 **Example Output:** 
 
@@ -122,7 +122,7 @@ Once the user guesses the correct answer, let’s add a feature that tells them 
 
 **Inputs:**
 
-(Integer) Guess
+(Number) Guess
 
 **Example Output:** 
 
@@ -142,7 +142,7 @@ Let’s update the last feature so that instead of just the number of guesses, w
 
 **Inputs:**
 
-(Integer) Guess
+(Number) Guess
 
 **Example Output:** 
 
@@ -163,7 +163,7 @@ Let’s add a feature that takes in the user’s name at the start of the game s
 
 (String) Name
 
-(Integer) Guess
+(Number) Guess
 
 **Example Output:** 
 
@@ -201,7 +201,7 @@ Let’s add a feature that records the number of guesses for each unique name th
 
 (String) Name
 
-(Integer) Guess
+(Number) Guess
 
 **Example Output:**
 
