@@ -192,7 +192,7 @@ Play Again Function
 
 -------------------------------------------------
 
-### Feature 6: Guess Star
+### Feature 7: Guess Star
 Let’s add a feature that records the number of guesses for each unique name that is entered when the game is started. If someone with the same name played before, then when they get a correct answer, it tells them if they beat their previous attempt (less guesses is better). 
 
 *Main Function*
