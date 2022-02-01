@@ -4,16 +4,29 @@
 var count = 1;
 var scoreArr = [];
 var i = 0;
+var playerName = '';
 function randomInt(max) {
     return Math.floor(Math.random() * max);
 }
 var randomInput = randomInt(100);
 var secretNumber = randomInput
 console.log(secretNumber);
+// var playerName = prompt('What is your name?')
+// var guess = prompt('Welcome, ' + playerName + '! Guess a number!');
+var marker = 0;
 
 function play(){
-   var playerName = prompt('What is your name?')
-   var guess = prompt('Welcome, ' + playerName + '! Guess a number!');
+   
+   if(marker === 0){
+   var localPlayerName = prompt('What is your name?')
+   playerName = localPlayerName;
+   var guess = prompt('Welcome, ' + localPlayerName + '! Guess a number!');
+   marker++;
+   
+   } else {
+    var guess = prompt('Guess a number!');
+   }
+
    var numberGuess = Number(guess);
    console.log(guess);
    if (numberGuess === secretNumber) {
@@ -26,13 +39,13 @@ function play(){
        count = 1;
        
    } else if (numberGuess > secretNumber) {
-       alert('Guess Lower');
+       alert('Sorry, ' + playerName+ '. Guess Lower');
        count++
        scoreArr[i] = numberGuess
        i++
        play();
    } else if( numberGuess < secretNumber) {
-       alert('Guess Higher');
+       alert('Sorry, ' + playerName+ '. Guess Higher');
        count++
        scoreArr[i] = numberGuess
        i++
