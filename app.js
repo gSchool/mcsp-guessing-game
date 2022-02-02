@@ -40,7 +40,7 @@ function play() {
               temp = int;
             }
           }
-        prompt("Welcome back, " + localPlayerName + "! Your previous best score is " + temp + "! Guess a number!");
+        alert("Welcome back, " + localPlayerName + "! Your previous best score is " + temp + "!");
     }
     // playerObj[playerName] = playerName;
     
@@ -60,7 +60,6 @@ function play() {
   console.log(guess);
   if (numberGuess === secretNumber) {
     if (count === 1) {
-      //   playerObj[playerName] = [];
       playerObj[playerName].push(count);
       if (playerObj[playerName].length === 1) {
         alert(
@@ -90,7 +89,38 @@ function play() {
           samePlayer();
         }
       }
-    } else {
+    } else if (count === 2){
+        for (int of playerObj[playerName]) {
+            if (int < temp) {
+              temp = int;
+            }
+          }
+          if (temp === Infinity) {
+              temp = count;
+          } else if(count < temp) {
+              temp = count;
+          }
+          alert(
+            "Correct! It only took you two guesses!" +
+              "\n" +
+              "Your previous guess was: " +
+              scoreArr.join(", ") + "\n" + "Your best score is " + temp 
+          );
+    
+          playerObj[playerName].push(count);
+          console.log(playerObj);
+          again = prompt("Play again? 'Yes' / 'No'");
+          sterileAgain = again.toLowerCase();
+          if (sterileAgain === "yes") {
+            var newPlayer = prompt("New Player? 'Yes / No'");
+            var sterileNewPlayer = newPlayer.toLowerCase();
+            if (sterileNewPlayer === "yes") {
+              playAgain();
+            } else {
+              samePlayer();
+            }
+          } 
+    }else {
         
       for (int of playerObj[playerName]) {
         if (int < temp) {
@@ -123,8 +153,7 @@ function play() {
         } else {
           samePlayer();
         }
-      } else {
-      }
+      } 
     }
 
     count = 1;
