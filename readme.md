@@ -20,7 +20,6 @@ Included in this repo are the following files:
  - `style.css` - Ignore for this project. This is to style the page, but your app will not be interacting directly with the webpage. 
  - `readme.md` - That is what you are reading right now. The file is in markdown format (.md), it's straight forward way to organize text content that Github understands. You don't need to know much more than that about it right now. 
 
-
 # Project: Guessing Game
 
 Create a guessing game that allows users to guess a secret number. You will need to use the built in “prompt()” function to capture the user input when the program is running. Once you have the user’s input, you can compare it with your secret number and use the built in “alert()” function to send back the appropriate message.
