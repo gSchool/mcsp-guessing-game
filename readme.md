@@ -150,7 +150,7 @@ Let’s update the last feature so that instead of just the number of guesses, w
 
 “
 
-(String) “Correct! Your previous guesses we’re 100, 30, 50, 55!” , if Guess is equal to the secret number
+(String) “Correct! Your previous guesses were 100, 30, 50, 55!” , if Guess is equal to the secret number
 
 -------------------------------------------------
 
