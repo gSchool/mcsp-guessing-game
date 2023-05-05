@@ -175,7 +175,7 @@ Or
 
 Or
 
-(String) “That’s Correct Alice! Your previous guesses we’re 100, 30, 50, 55!” , if Guess is equal to the secret number
+(String) “That’s Correct Alice! Your previous guesses were 100, 30, 50, 55!” , if Guess is equal to the secret number
 
 -------------------------------------------------
 
