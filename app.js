@@ -6,12 +6,12 @@ function guessMe(num) {
     alert(`Correct! It only took you ${counter} guesses!`);
   } else if (num < attempt) {
     alert("Lower");
-    guessMe(num);
     counter++;
+    guessMe(num);
   } else if (num > attempt) {
     alert("Higher");
-    guessMe(num);
     counter++;
+    guessMe(num);
   }
 }
 
