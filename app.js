@@ -24,7 +24,7 @@ function promptInt(message) {
 
 let players = {};
 
-function play() {
+const play = function () {
   const secretNumber = randomInt(10);
   let name = prompt("What is your name?");
   let guess = promptInt("Guess a number.");
@@ -74,6 +74,6 @@ function play() {
   } else {
     alert(`Thank for playing, ${name}!`);
   }
-}
+};
 
 play();
