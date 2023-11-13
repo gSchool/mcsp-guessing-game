@@ -48,6 +48,7 @@ const play = function () {
   // if the user has played before, tell them if they did better or worse
   if (players[name] !== undefined) {
     const numGuesses = guesses.length;
+    // change
     const prevGuesses = players[name].length;
     if (numGuesses > prevGuesses) {
       alert(
